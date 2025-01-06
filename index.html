@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Thought Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <div class="logo">
+                <span class="logo-text"><img src="https://deepthought.education/assets/images/logo/logo.svg" alt="DeepThought Logo Image"></span>
+            </div>
+        </div>
+        <div class="header-right">
+            <button class="icon-button"><i class="fas fa-question-circle"></i></button>
+            <button class="icon-button"><i class="fas fa-users"></i></button>
+            <button class="icon-button"><i class="fas fa-calendar"></i></button>
+            <div class="user-avatar"></div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div id="project-container"></div>
+        </div>
+
+        <div class="floating-buttons">
+            <button class="float-btn"><i class="fas fa-question-circle"></i></button>
+            <button class="float-btn"><i class="fas fa-users"></i></button>
+            <button class="float-btn"><i class="fas fa-calendar"></i></button>
+        </div>
+    </main>
+
+    <template id="video-asset-template">
+        <div class="asset video-asset">
+            <h3 class="asset-title"></h3>
+            <p class="asset-description"></p>
+            <div class="video-container">
+                <iframe class="video-frame" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </template>
+
+    <template id="article-asset-template">
+        <div class="asset article-asset">
+            <h3 class="asset-title"></h3>
+            <p class="asset-description"></p>
+            <div class="article-content">
+                <textarea class="article-input" placeholder="Write your article here..."></textarea>
+                <button class="submit-btn">Submit Article</button>
+            </div>
+        </div>
+    </template>
+
+    <template id="threadbuilder-asset-template">
+        <div class="asset threadbuilder-asset">
+            <h3 class="asset-title"></h3>
+            <p class="asset-description"></p>
+            <div class="thread-form">
+                <div class="form-group">
+                    <label>Thread Content</label>
+                    <textarea class="thread-input" placeholder="Enter your thread here..."></textarea>
+                </div>
+                <button class="submit-btn">Submit Thread</button>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
